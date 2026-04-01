@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Sunflower</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="tela-inicial" id="tela-inicial">
+      <div class="sunflower" id="girassol">🌻</div>
+      <p class="pergunta" id="pergunta">Quer sair comigo?</p>
+      <button class="btn btn-sim" id="btn-sim" onclick="clicarSim()">Sim!</button>
+    </div>
+
+    <button class="btn btn-nao" id="btn-nao" onclick="clicarNao()">Não...</button>
+
+    <div class="tela-listagem" id="tela-listagem">
+      <div class="sunflower-topo" id="girassol-topo">🌻</div>
+      <div class="cards-lista" id="cards-lista"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
