@@ -38,8 +38,8 @@ const eventos = [
     titulo:    'Resenha & Oração',
     data:      '29/03/26',
     subtitulo: 'Casa da Maria (Patrimônio da CCB)',
-    descricao: 'Foi uma noite indescritível! Nos divertimos muito enquanto conversávamos com meus amigos da Central… Dentre algumas humilhações, brincadeiras e risadas, demonstramos ser uma ótima dupla no jogo de palavras! Se bem que nossa química nunca foi um problema, não é? Hehe. E a oração foi de outro mundo… Sentir tanto a presença de Deus junto a você foi muito especial. Ainda mais pela forma como foi… De alguma forma, senti que até espiritualmente, nos completamos. Foi o dia em que falamos ‘Eu te amo’ pela primeira vez.',
-    foto:      null,
+    descricao: 'Foi uma noite indescritível! Nos divertimos muito enquanto conversávamos com meus amigos da Central… Dentre algumas humilhações, brincadeiras e risadas, demonstramos ser uma ótima dupla no jogo de palavras! Se bem que nossa química nunca foi um problema, não é? Hehe. E a oração foi de outro mundo… Sentir tanto a presença de Deus junto a você foi muito especial. Ainda mais pela forma como foi… De alguma forma, senti que até espiritualmente, nos completamos. Foi o dia em que falamos ‘Eu te amo’ pela primeira vez. E essa foto de eu te ensinando um Mi Bemol no violão ficou tão, tão adorável!! (Valeu, paparazzis)',
+    foto:      'assets/marias_house.jpg',
   },
   {
     titulo:    'Segundo Encontro',
@@ -53,14 +53,14 @@ const eventos = [
     data:      '03/04/26',
     subtitulo: 'Shopping Dom Pedro',
     descricao: 'Evento futuro...',
-    foto:      null,
+    foto:      'assets/por_do_sol.jpg',
   },
   {
     titulo:    'Piquenique no Parque',
     data:      '05/04/26',
     subtitulo: 'Parque Ecológico, Indaiatuba',
-    descricao: 'Evento futuro...',
-    foto:      null,
+    descricao: 'Esse foi, definitivamente, o meu encontro favorito até então! O parque estava lindo, o clima extremamente agradável e o céu tão azul que parecia ter sido pintado com canetinha. Foi a primeira vez que experimentei algo feito por você, e passei os dias seguintes maravilhado com o quão gostosa ficou sua tortinha de frango e o famoso brownie, hehe. Nossa… estava bom mesmo. Fiquei muito feliz com o seu presente. Dá pra ver o cuidado que você teve ao fazer, à mão, os marcadores de página de Star Wars… Me senti tão querido e cuidado que, toda vez que abro meu livro e vejo o marcadorzinho do R2-D2, abro um sorriso bobo, como se estivesse recebendo um abraço seu à distância. Falando em abraços, amei cada segundo de chamego que tivemos. E percebi que a minha Bel-Dependência estava realmente mais intensa do que o normal… principalmente por causa dos seus beijos, que, nossa… eu não queria que acabassem. Tivemos conversas muito profundas, e senti que o nosso nível de conexão tem crescido de forma tão intensa e exponencial que, mesmo sendo tudo tão recente, já confio a você alguns dos maiores segredos da minha vida. E fico muito feliz em saber que você também confiou alguns a mim. O “eu te amo” estava cada vez mais sincero… E nenhuma das músicas que te dediquei no violão foi escolhida por acaso, pode acreditar nisso, girassol. Eu preciso de você ‘Aqui, Ali e em Todo Lugar’.',
+    foto:      'assets/we2.jpg',
   },
   {
     titulo:    'Cinema Michael Jackson',
@@ -289,9 +289,19 @@ function clicarSim() {
   });
 
   setTimeout(() => {
+    btnSim.style.transition = 'none';
+    btnSim.style.width = '0px';
+    btnSim.style.height = '0px';
+    btnSim.style.opacity = '0';
+    btnSim.style.left = '-999px';
+    btnSim.style.top = '-999px';
+    btnNao.style.display = 'none';
+
+    document.body.style.width    = '';
+    document.body.style.minWidth = '';
+
     girassolTopo.style.opacity = '0';
     girassolTopo.classList.add('visivel');
-
     gVoando.remove();
 
     requestAnimationFrame(() => {
