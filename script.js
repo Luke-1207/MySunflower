@@ -52,7 +52,7 @@ const eventos = [
     titulo:    'Terceiro Encontro',
     data:      '03/04/26',
     subtitulo: 'Shopping Dom Pedro',
-    descricao: 'Evento futuro...',
+    descricao: 'Mãos dadas, beijinhos, carinhos, abraços, risadas... e esse pôr do sol maravilhoso na volta para casa. Sem palavras, me sentia totalmente entregue a você. E não tinha o menor interesse de sair.',
     foto:      'assets/por_do_sol.jpg',
   },
   {
@@ -62,24 +62,75 @@ const eventos = [
     descricao: 'Esse foi, definitivamente, o meu encontro favorito até então! O parque estava lindo, o clima extremamente agradável e o céu tão azul que parecia ter sido pintado com canetinha. Foi a primeira vez que experimentei algo feito por você, e passei os dias seguintes maravilhado com o quão gostosa ficou sua tortinha de frango e o famoso brownie, hehe. Nossa… estava bom mesmo. Fiquei muito feliz com o seu presente. Dá pra ver o cuidado que você teve ao fazer, à mão, os marcadores de página de Star Wars… Me senti tão querido e cuidado que, toda vez que abro meu livro e vejo o marcadorzinho do R2-D2, abro um sorriso bobo, como se estivesse recebendo um abraço seu à distância. Falando em abraços, amei cada segundo de chamego que tivemos. E percebi que a minha Bel-Dependência estava realmente mais intensa do que o normal… principalmente por causa dos seus beijos, que, nossa… eu não queria que acabassem. Tivemos conversas muito profundas, e senti que o nosso nível de conexão tem crescido de forma tão intensa e exponencial que, mesmo sendo tudo tão recente, já confio a você alguns dos maiores segredos da minha vida. E fico muito feliz em saber que você também confiou alguns a mim. O “eu te amo” estava cada vez mais sincero… E nenhuma das músicas que te dediquei no violão foi escolhida por acaso, pode acreditar nisso, girassol. Eu preciso de você ‘Aqui, Ali e em Todo Lugar’.',
     foto:      'assets/we2.jpg',
   },
+
   {
-    titulo:    'Cinema Michael Jackson',
+    titulo:    'Pedido de Namoro',
+    data:      '18/04/26',
+    subtitulo: 'Parque do Mirim, Indaiatuba',
+    novo:      true,
+    descricao: 'Minha barriga ainda embrulha só de lembrar desse dia, realmente não consigo entender como você não desconfiou de nada, nem por um segundo… O dia foi perfeito, eu estava com muito medo da alta probabilidade de chuva, mas recebi uma ajudinha do nosso Melhor Amigo… que, além de segurar a chuva, pintou o céu com um maravilhoso pôr do sol. Mas, vamos combinar, por mais bonito que ele fosse, ainda não conseguia competir com quem estava do meu lado. Eu estava tão nervoso, com as mãos tremendo e um nó na garganta difícil de desfazer… A ideia da cartinha foi boa por isso, não sei se conseguiria dizer tudo o que queria sem travar ou esquecer de alguma coisa, caso fosse de cabeça… Mas agradeço que não desmaiei e, no final, tudo ocorreu bem KKKKKKKKKKK. Te chamar de “amor” pela primeira vez foi um sentimento e tanto, nunca havia sentido nada perto disso em toda a minha vida, e tinha a certeza de que um lindo capítulo estava começando em minha vida, onde cada segundo de espera valeu a pena. Minha primeira namorada. Primeira e última. Quero te amar cada vez mais, olhar para trás neste dia e ter a confirmação de que fiz a melhor escolha da minha vida. Falar com seus pais também não foi nada fácil… agradeço a ajuda do torresmo KKKKKKKKKKKKK.',
+    foto:      'assets/pedidonamoro.jpeg',
+  },
+  {
+    titulo:    'Cinema - O Diabo Veste Prada 2',
+    data:      '03/05/26',
+    subtitulo: 'Shopping Jaraguá, Indaiatuba',
+    descricao: 'Eu precisava colocar isso aqui, desculpe. EU GOSTEI MUITO DESSE FILME!!! Acho que me diverti mais do que você, hehehe… Nosso papo na cafeteria foi muito gostoso, adoro quando conversamos. Essa nossa foto é uma das minhas favoritas...',
+    foto:      'assets/dvp2.jpeg',
+  },
+  {
+    titulo:    'Feira de Nações e Vinícola',
+    data:      '16/05/26',
+    subtitulo: 'Piracicaba, Santa Olímpia',
+    descricao: 'Esse foi o famoso “rolê aleatório”, não é? Bem melhor do que eu esperava, tenho que admitir! Lembro de dormir no seu colo dentro do carro, recebendo o melhor carinho do mundo. A melhor parte do dia, definitivamente, foi conversar com você, como sempre! Lá, mesmo no meio de tantas pessoas, me senti tão confortável e em casa, bem da forma que só você consegue me fazer sentir… O evento também foi legalzinho, vai! E a degustação de vinhos foi a coisa mais chique que fizemos juntos até então KKKKKKKK.',
+    foto:      'assets/piracicabatiroles.jpeg',
+  },
+  {
+    titulo:    'Bible Talk - Filipenses',
+    data:      '24/05/26',
+    subtitulo: 'Café Conceito, Indaiatuba',
+    descricao: 'Tenho muita felicidade de pensar nesse nosso propósito! Com paciência, vamos terminar a bíblia juntos, e logo no nosso primeiro encontro sobre isso, já aprendi tanto! Amo sua sabedoria e a forma como você consegue expor seus pensamentos, sempre analisando a coisa por um todo, seus vários caminhos e espectros. Discutimos sobre Deus, humildade, disposição, alegria… Tudo que nos molda como cristãos aqui na Terra. Vamos seguir aprendendo juntos cada vez mais, evoluindo espiritualmente. Conto com sua ajuda, sempre que vacilar e precisar… e conte com a minha, meu amor!',
+    foto:      'assets/bibletalk_filipenses.jpeg',
+  },
+  {
+    titulo:    'Ciência Aberta 2026',
+    data:      '30/05/26',
+    subtitulo: 'CNPEM, Campinas',
+    descricao: 'ROLÊ NERD ROLÊ NERD ROLÊ NERD ROLÊ NERD ROLÊ NERD ROLÊ NERD ROLÊ NERD ROLÊ NERD!!! Definitivamente sou apaixonado por você, espero viver muitos dias assim ao seu lado, hehehe. ADOREI CADA SEGUNDO! Por mais que tenha sido cansativo caminhar no sol durante o dia, me senti sempre muito entretido e interessado no que vimos, me senti um cientista por algumas vezes KKKKKKKKKKK, e, mais uma vez, me senti em casa, mesmo estando longe… porque estava contigo. Nosso tempinho deitados na grama, olhando pro céu, reconfortou meu coração e me fez agradecer, mais uma vez, por estar contigo ao meu lado. Com os tênis cheios de barro e as pernas cansadas, voltamos pra casa, em outro momento mágico de música e conexão dentro do carro… te amo.',
+    foto:      'assets/cnpem.jpeg',
+  },
+  {
+    titulo:    'Primeiro Dia dos Namorados',
+    data:      '12/06/26',
+    subtitulo: 'Moqueca, Parque Ecológico, Indaiatuba',
+    descricao: 'Eu estava ansioso por esse dia… e você me fez sentir, outra vez, tão completo. Seu cuidado com meu presente, nos cartõezinhos, embalagem, na escolha de um livro que eu realmente gostava e queria e, é claro, NO MEU MARAVILHOSO PAVÊ DE KINDER BUENO… me deixou besta, besta. Você repara nos meus detalhes e gostos, isso me faz sentir muitíssimo amado. A comida estava ótima! O único problema é que me deixaram muito longe de você, hehe… Por menos mesas frente a frente, quem inventou que isso é romantismo!? Pudemos conversar no parque depois, e eu acho que também acertei no presente, os brincos e o colar pareceram feitos para você… que tenha sido nosso primeiro de muitos! :)',
+    foto:      'assets/diadosnamorados.jpeg',
+  },
+  {
+    titulo:    '2000s Party!',
+    data:      '21/06/26',
+    subtitulo: 'Aniversário da Isa',
+    descricao: 'Karaokê, boas fantasias, docinhos… mas tenho que destacar, você estava TÃO LINDA com a maquiagem, cabelo e roupa! Toda vez que te olhava, sentia uma pontada diferente no coração KKKKKKK. Andar por aí com sua marca de beijo na minha bochecha me deixou todo cheio, não vou mentir… E concordo com a Maria, seu beijo é muito bonito KKKKKKKKKK. Jogar basquete com você também foi mágico, VOCÊ É MUITO BOA! Temos que praticar mais esportes juntos… minha gatinha, queria ter te enchido de beijos o dia todo ;)',
+    foto:      'assets/2000sparty.jpeg',
+  },
+  {
+    titulo:    'Casamento de Gaby e Pedro',
+    data:      '27/06/26',
+    subtitulo: 'Itu',
+    descricao: 'Seu vestido estava maravilhoso… totalmente de acordo com seu cabelo, maquiagem, o colar que te dei e, claro, suas botas ✨👢 É sempre ótimo e divertido estar com sua família, o pouco que dançamos foi o suficiente para me deixar mortinho e desnorteado kkkkkkkkkk, aquela banda era muito boa, ainda vou aprender a assoviar como aquele cara. Fiquei muito feliz de estar presente em um dia especial para sua família! Me fez pensar no nosso dia… meu coração erra o compasso só de imaginar.',
+    foto:      'assets/casamentogabypedro.jpeg',
+  },
+  {
+    titulo:    'Filmes Star Wars',
     data:      'xx/xx/26',
-    subtitulo: 'NA ESTREIA, POR FAVOR',
-    descricao: 'Evento futuro...',
+    subtitulo: 'não tirei foto desse dia, mas vale ressaltar o quão feliz eu fiquei KKKKKKKKKKK 1/6',
+    descricao: 'Evento futuro... Em uma galáxia muito, muito distante',
     foto:      null,
   },
   {
-    titulo:    'Cafeteria - Papo Bíblia',
+    titulo:    'Bible Talk - João',
     data:      'xx/xx/26',
     subtitulo: 'Uma vez por mês!',
-    descricao: 'Evento futuro...',
-    foto:      null,
-  },
-  {
-    titulo:    'Cinema em casa - O Hobbit',
-    data:      'xx/xx/26',
-    subtitulo: 'POR FAVOR O QUANTO ANTES',
     descricao: 'Evento futuro...',
     foto:      null,
   },
@@ -87,13 +138,6 @@ const eventos = [
     titulo:    'Dona Nice Cozinha 0 Glúten, Campinas',
     data:      'xx/xx/26',
     subtitulo: 'Restaurante que você comentou!',
-    descricao: 'Evento futuro...',
-    foto:      null,
-  },
-  {
-    titulo:    'Filmes Star Wars',
-    data:      'xx/xx/26',
-    subtitulo: 'Já adianto que vou falar pra caramba',
     descricao: 'Evento futuro...',
     foto:      null,
   },
@@ -335,10 +379,13 @@ function renderizarCards() {
     const wrapper = document.createElement('div');
     wrapper.className = `card-wrapper ${lado}`;
 
-    const fotoHTML = `<img class="card-foto" src="${ev.foto || 'assets/empty.jpg'}" alt="${ev.titulo}" />`;
+    const temFoto = !!ev.foto;
+    const fotoHTML = `<img class="card-foto${temFoto ? ' card-foto-clicavel' : ''}" src="${ev.foto || 'assets/empty.jpg'}" alt="${ev.titulo}" ${temFoto ? `onclick="abrirGaleria(${idx})"` : ''} />`;
+    const badgeHTML = ev.novo ? `<div class="card-badge-novo">Novo!</div>` : '';
 
     wrapper.innerHTML = `
       <div class="card" id="card-${idx}">
+        ${badgeHTML}
         ${fotoHTML}
         <div class="card-corpo">
           <div class="card-titulo">${ev.titulo}</div>
@@ -360,10 +407,58 @@ function toggleCard(idx) {
   document.getElementById('card-' + idx).classList.toggle('expandido');
 }
 
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxLegenda = document.getElementById('lightbox-legenda');
+
+function abrirGaleria(idx) {
+  const ev = eventos[idx];
+  if (!ev.foto) return;
+  lightboxImg.src = ev.foto;
+  lightboxImg.alt = ev.titulo;
+  lightboxLegenda.textContent = `${ev.titulo} — ${ev.data}`;
+  lightbox.classList.add('visivel');
+  document.body.style.overflow = 'hidden';
+}
+
+function fecharGaleria() {
+  lightbox.classList.remove('visivel');
+  document.body.style.overflow = 'auto';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') fecharGaleria();
+});
+
+const dataNamoro = new Date('2026-04-18T17:40:00');
+const contadorEl = document.getElementById('contador-namoro');
+
+function atualizarContador() {
+  const diffMs = Date.now() - dataNamoro.getTime();
+  const segundosTotais = Math.max(0, Math.floor(diffMs / 1000));
+
+  const dias    = Math.floor(segundosTotais / 86400);
+  const horas   = Math.floor((segundosTotais % 86400) / 3600);
+  const minutos = Math.floor((segundosTotais % 3600) / 60);
+  const segundos = segundosTotais % 60;
+
+  contadorEl.innerHTML = `
+    <span class="contador-titulo">Somos namorados há</span>
+    <div class="contador-numeros">
+      <div class="contador-item"><span class="contador-valor">${dias}</span><span class="contador-label">dias</span></div>
+      <div class="contador-item"><span class="contador-valor">${String(horas).padStart(2, '0')}</span><span class="contador-label">horas</span></div>
+      <div class="contador-item"><span class="contador-valor">${String(minutos).padStart(2, '0')}</span><span class="contador-label">min</span></div>
+      <div class="contador-item"><span class="contador-valor">${String(segundos).padStart(2, '0')}</span><span class="contador-label">seg</span></div>
+    </div>
+  `;
+}
+
 window.addEventListener('load', () => {
   renderizarCards();
   posicaoInicialSim();
   posicaoInicialNao();
+  atualizarContador();
+  setInterval(atualizarContador, 1000);
 });
 
 window.addEventListener('resize', () => {

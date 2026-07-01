@@ -20,7 +20,14 @@
 
     <div class="tela-listagem" id="tela-listagem">
       <div class="sunflower-topo" id="girassol-topo">🌻</div>
+      <div class="contador-namoro" id="contador-namoro"></div>
       <div class="cards-lista" id="cards-lista"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="fecharGaleria()">
+      <button class="lightbox-fechar" onclick="fecharGaleria()" aria-label="Fechar">&times;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
+      <div class="lightbox-legenda" id="lightbox-legenda"></div>
     </div>
 
     <script src="script.js"></script>
