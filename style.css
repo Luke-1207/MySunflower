@@ -2,8 +2,8 @@
    Paleta de Cores
    ════════════════════════════════ */
 :root {
-  --cor-fundo:       #1a2a4a;
-  --cor-card:        #223460;
+  --cor-fundo:       #283240;
+  --cor-card:        #343f4e;
   --cor-texto:       #ffffff;
   --cor-texto-sub:   rgba(255,255,255,.60);
   --cor-destaque:    #e8c832;
@@ -163,13 +163,33 @@ body::before {
 }
 
 .sunflower-topo {
-  font-size: 36px;
+  font-size: 56px;
   text-align: center;
-  padding: 20px 0 8px;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,.35));
-  animation: wobble 3s ease-in-out infinite;
+  padding: 28px 0 14px;
+  filter:
+    drop-shadow(0 0 6px  rgba(255, 220, 60, .95))
+    drop-shadow(0 0 18px rgba(255, 196, 0, .80))
+    drop-shadow(0 0 42px rgba(255, 170, 0, .55));
+  animation:
+    wobble 3s ease-in-out infinite,
+    brilho 3s ease-in-out infinite;
   opacity: 0;
   transition: opacity .3s ease;
+}
+
+@keyframes brilho {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 6px  rgba(255, 220, 60, .95))
+      drop-shadow(0 0 18px rgba(255, 196, 0, .80))
+      drop-shadow(0 0 42px rgba(255, 170, 0, .55));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 10px rgba(255, 230, 90, 1))
+      drop-shadow(0 0 28px rgba(255, 200, 0, .95))
+      drop-shadow(0 0 64px rgba(255, 170, 0, .75));
+  }
 }
 .sunflower-topo.visivel { opacity: 1; }
 
@@ -432,7 +452,7 @@ body::before {
   justify-content: center;
   gap: 16px;
   padding: 40px 24px;
-  background: rgba(10, 16, 32, .92);
+  background: rgba(18, 23, 30, .94);
   opacity: 0;
   pointer-events: none;
   transition: opacity .3s ease;
@@ -473,3 +493,76 @@ body::before {
   padding: 6px 10px;
 }
 .lightbox-fechar:hover { color: var(--cor-destaque); }
+
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0 30px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.carrossel-trilho {
+  display: flex;
+  width: max-content;
+  animation: carrossel 120s linear infinite;
+}
+.carrossel:hover .carrossel-trilho { animation-play-state: paused; }
+
+@keyframes carrossel {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.carrossel-foto {
+  width: 160px;
+  height: 200px;
+  margin-right: 16px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.45);
+  cursor: zoom-in;
+  flex-shrink: 0;
+}
+
+@media (min-width: 600px) {
+  .carrossel-foto { width: 200px; height: 250px; margin-right: 20px; }
+}
+
+.mensagem {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: var(--cor-texto);
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+}
+.mensagem p + p { margin-top: 14px; }
+
+.mensagem-final {
+  margin-top: 28px !important;
+  color: var(--cor-destaque);
+  font-size: 17px;
+}
+
+.jamais {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 22px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.jamais-trilho {
+  display: flex;
+  width: max-content;
+  animation: carrossel 60s linear infinite;
+}
+
+.jamais-trilho span {
+  color: var(--cor-texto-sub);
+  font-size: 13px;
+  padding-right: 28px;
+  white-space: nowrap;
+}
