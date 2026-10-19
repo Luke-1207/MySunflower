@@ -164,16 +164,19 @@ const eventos = [
   },
 ];
 
+/*
 const btnSim = document.getElementById('btn-sim');
 const btnNao = document.getElementById('btn-nao');
 const telaIni = document.getElementById('tela-inicial');
 const girassol = document.getElementById('girassol');
 const pergunta = document.getElementById('pergunta');
+*/
 
 const telaList = document.getElementById('tela-listagem');
 const girassolTopo = document.getElementById('girassol-topo');
-const cardsLista = document.getElementById('cards-lista');
+// const cardsLista = document.getElementById('cards-lista');
 
+/*
 const mensagensSim = [
   'Sim!',
   'Tem certeza?',
@@ -362,7 +365,9 @@ function clicarSim() {
     });
   }, 720);
 }
+*/
 
+/*
 function renderizarCards() {
   cardsLista.innerHTML = '';
 
@@ -406,6 +411,30 @@ function renderizarCards() {
 function toggleCard(idx) {
   document.getElementById('card-' + idx).classList.toggle('expandido');
 }
+*/
+
+function renderizarCarrossel() {
+  const trilho = document.getElementById('carrossel-trilho');
+  const fotos = eventos
+    .map((ev, idx) => ({ ev, idx }))
+    .filter(({ ev }) => ev.foto);
+  const html = fotos
+    .map(({ ev, idx }) => `<img class="carrossel-foto" src="${ev.foto}" alt="${ev.titulo}" onclick="abrirGaleria(${idx})" />`)
+    .join('');
+  trilho.innerHTML = html + html;
+}
+
+function renderizarJamais() {
+  const trilho = document.getElementById('jamais-trilho');
+  const frase = '<span>Jamais vai morrer.</span>'.repeat(20);
+  trilho.innerHTML = frase + frase;
+}
+
+function mostrarListagem() {
+  document.body.style.overflow = 'auto';
+  girassolTopo.classList.add('visivel');
+  telaList.classList.add('visivel');
+}
 
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
@@ -443,7 +472,7 @@ function atualizarContador() {
   const segundos = segundosTotais % 60;
 
   contadorEl.innerHTML = `
-    <span class="contador-titulo">Somos namorados há</span>
+    <span class="contador-titulo">Eu te amo há</span>
     <div class="contador-numeros">
       <div class="contador-item"><span class="contador-valor">${dias}</span><span class="contador-label">dias</span></div>
       <div class="contador-item"><span class="contador-valor">${String(horas).padStart(2, '0')}</span><span class="contador-label">horas</span></div>
@@ -454,16 +483,21 @@ function atualizarContador() {
 }
 
 window.addEventListener('load', () => {
-  renderizarCards();
-  posicaoInicialSim();
-  posicaoInicialNao();
+  // renderizarCards();
+  // posicaoInicialSim();
+  // posicaoInicialNao();
+  renderizarCarrossel();
+  renderizarJamais();
+  mostrarListagem();
   atualizarContador();
   setInterval(atualizarContador, 1000);
 });
 
+/*
 window.addEventListener('resize', () => {
   if (naoClicks === 0) {
     posicaoInicialSim();
     posicaoInicialNao();
   }
 });
+*/
