@@ -487,7 +487,7 @@ window.addEventListener('load', () => {
   // posicaoInicialSim();
   // posicaoInicialNao();
   renderizarCarrossel();
-  renderizarJamais();
+  // renderizarJamais();
   mostrarListagem();
   atualizarContador();
   setInterval(atualizarContador, 1000);

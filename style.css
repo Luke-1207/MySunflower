@@ -566,3 +566,27 @@ body::before {
   padding-right: 28px;
   white-space: nowrap;
 }
+
+.voce-brilho {
+  color: var(--cor-destaque);
+  text-shadow:
+    0 0 6px  rgba(255, 220, 60, .95),
+    0 0 16px rgba(255, 196, 0, .80),
+    0 0 34px rgba(255, 170, 0, .55);
+  animation: brilho-texto 3s ease-in-out infinite;
+}
+
+@keyframes brilho-texto {
+  0%, 100% {
+    text-shadow:
+      0 0 6px  rgba(255, 220, 60, .95),
+      0 0 16px rgba(255, 196, 0, .80),
+      0 0 34px rgba(255, 170, 0, .55);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(255, 230, 90, 1),
+      0 0 24px rgba(255, 200, 0, .95),
+      0 0 50px rgba(255, 170, 0, .75);
+  }
+}
