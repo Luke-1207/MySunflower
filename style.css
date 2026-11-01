@@ -590,3 +590,11 @@ body::before {
       0 0 50px rgba(255, 170, 0, .75);
   }
 }
+
+.mensagem .data-brilho {
+  margin-top: 172px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--cor-destaque);
+  animation: brilho-texto 3s ease-in-out infinite;
+}
