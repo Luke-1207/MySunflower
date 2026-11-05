@@ -598,3 +598,11 @@ body::before {
   color: var(--cor-destaque);
   animation: brilho-texto 3s ease-in-out infinite;
 }
+
+.buque {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 568 / 670;
+  margin: 28px auto 0;
+}
