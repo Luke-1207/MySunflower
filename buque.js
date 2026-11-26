@@ -10,8 +10,8 @@
   const CENTRO_X = 260;
   const LACO_Y = 512;
   const BASE_Y = 600;
-  const INTERVALO = 2.7;
-  const DURACAO_FLOR = 7.5;
+  const INTERVALO = 13;
+  const DURACAO_FLOR = 30;
   const PONTOS = 30;
   const DPR_MAX = 2;
   const INTERVALO_QUADRO = 1000 / 32;

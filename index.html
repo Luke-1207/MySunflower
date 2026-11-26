@@ -28,17 +28,33 @@
       </div>
 
       <div class="mensagem">
-        <!-- <p>A mensagem que te mandei no casamento foi “como eu queria que você estivesse aqui comigo”. Usei a gravata da cor do seu vestido que eu nunca vi, só pra sentir que, de alguma forma, você estava lá comigo.</p> -->
-        <!-- <p>Não sei se você chegou a ler a carta ou se abriu este site, com a caixa que te entreguei. Mas, se estas palavras encontraram você, há algo que talvez ninguém nunca lhe conte: desde o dia em que você partiu, meus olhos nunca mais procuraram outra mulher. E eu não sinto que conseguirão. O amor que ainda sinto por você me faz querer ignorar todas as outras mulheres pelo resto da vida. Meu coração ainda bate (e bate muito) mas só por você.</p>
-        <p>Mesmo se for para apenas, um dia, encontrar sua alma no Grande Dia, e não para te servir como Cristo serviu a igreja, estarei conformado… Com a certeza de que, nesta Terra, eu nunca vou conseguir amar uma mulher mais do que eu amei você. Eu não vou encontrar nada como você. Nunca mais. Eu só queria poder voltar para aquela roda gigante… E nunca mais sair.</p>
-        <p>Mas, me coloco no meu lugar, do lado de fora da roda gigante. Olhando pro banco do meu carro vazio ao meu lado todo dia. Sem te levar pra casa, sem ouvir sua rotina, sem ver seu sorriso ou ouvir sua risada. Permanecendo do lado de fora da sua vida. E não canso de pedir para que Ele te abençoe e te dê forças na sua rotina, todos os dias. Tenho certeza de que está dando.</p>
-        <p>Eu fui o tipo de homem que fez sua mulher falar com Deus chorando. Sei do peso dessa frase, e é por isso que o Lucas de antes nunca mais vai ver a luz do dia.</p>
-        <p>Então, de verdade… que Deus te guarde sempre e sempre. Continue brilhando. Você não merece sofrer por ninguém.</p>
+        <p>Não sei se você chegou a ler a carta ou se abriu este site. Mas, se estas palavras encontraram você, há algo que talvez ninguém nunca lhe conte: desde o dia em que você partiu, meus olhos nunca mais procuraram outra mulher. E eu não sinto que conseguirão. Meu coração ainda bate, mas só por você.</p>
         <p>Você é A mulher, Isabel. Eu te admiro infinitamente.</p>
-        <p>Como deixei claro no presente: foi meu último aceno. Uma última palavra sua e me calarei para sempre.</p> -->
-        <!-- <p>Mas... se você não fechar essa porta completamente, eu tenho paciência o suficiente para te esperar o tempo que for, só para te ter ao meu lado, porque eu realmente quero que seja <span class="voce-brilho">você</span>.</p> -->
-        <!-- <p>Se você não fechar essa porta completamente, eu tenho paciência o suficiente para te esperar o tempo que for, só para te ter ao meu lado, porque eu realmente quero que seja <span class="voce-brilho">você</span>.</p> -->
-        <p class="data-brilho">18/09/2028</p>
+        <p>Se você me permitir conversar uma última vez, farei tudo diferente, porque eu realmente quero que seja <span class="voce-brilho">você</span>.</p>
+        <br>
+        <p>Foi pensando em tudo isso que te compus essa canção:</p>
+
+        <div class="player" id="player">
+          <audio id="player-audio" src="assets/como-girassol.mp3" preload="metadata"></audio>
+          <button class="player-play" id="player-play" aria-label="Tocar">
+            <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+            <svg class="icone-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4.5" height="14" rx="1.5"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.5"/></svg>
+          </button>
+          <div class="player-info">
+            <div class="player-topo">
+              <span class="player-titulo">Como Girassol</span>
+              <span class="player-girassol" aria-hidden="true">🌻</span>
+            </div>
+            <div class="player-barra" id="player-barra" role="slider" aria-label="Posição da música" tabindex="0">
+              <div class="player-progresso" id="player-progresso"></div>
+            </div>
+            <div class="player-tempos">
+              <span id="player-atual">0:00</span>
+              <span id="player-total">0:00</span>
+            </div>
+          </div>
+        </div>
+
         <canvas class="buque" id="buque" aria-hidden="true"></canvas>
       </div>
 
@@ -59,5 +75,6 @@
 
     <script src="script.js"></script>
     <script src="buque.js"></script>
+    <script src="player.js"></script>
   </body>
 </html>
